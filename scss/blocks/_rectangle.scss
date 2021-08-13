@@ -1,0 +1,141 @@
+// MAIN__RECTANGLE
+
+.main__rectangle {
+  background-color: #F4F5F7;
+}
+
+.rectangle__header {
+  padding-top: 96px;
+  width: 635px;
+}
+
+.rectangle-header__heading{
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: $color-text-dark;
+}
+
+.rectangle-header__text {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: $color-text;
+}
+
+// RECTANGLE__MAIN
+
+.rectngle__list {
+  display: flex;
+  align-items: center;
+  @include reset-list;
+  padding-top: 72px;
+  padding-bottom: 94px;
+}
+
+.rectangle__item {
+  width: 255px;
+}
+
+.rectangle__item ~ .rectangle__item {
+  margin-left: 30px;
+}
+
+.rectangle-item__a {
+  display: inline-block;
+}
+
+.rectangle-item__img {
+  display: block;
+  width: 72px;
+  height: 72px;
+}
+
+.rectangle-item__heading {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: $color-text-dark;
+}
+
+.rectangle-item__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: $color-text;
+}
+
+// RESPONSIVE
+
+@include breakpoint-down (768px) {
+
+  .rectangle__header {
+    padding-top: 56px;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rectngle__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include reset-list;
+    padding-top: 22px;
+    padding-bottom: 24px;
+  }
+  
+  .rectangle__item {
+    width: 80%;
+    text-align: center;
+  }
+  
+  .rectangle__item ~ .rectangle__item {
+    margin-left: 0px;
+  }
+  
+  .rectangle-item__a {
+    display: inline-block;
+  }
+  
+  .rectangle-item__img {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .rectangle-item__heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .rectangle-item__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
